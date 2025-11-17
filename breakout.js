@@ -333,7 +333,6 @@ function updateBallXY() {
         }
 
         ballVx = hit * ballSpeed;
-        //var dySign = ballVy < 0 ? -1 : 1;
         var rest = ballSpeed * ballSpeed - ballVx * ballVx;
         if (rest < 0) {
             rest = 0;
