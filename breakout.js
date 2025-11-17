@@ -291,7 +291,7 @@ function updateBallXY() {
 
     var half = BALL_SIZE / 2;
 
-    // provjera sudara s liveim/desnim rubom canvasa
+    // provjera sudara s lijevim/desnim rubom canvasa
     if (ballX - half <= 0) {
         ballX = half;
         ballVx = -ballVx;
