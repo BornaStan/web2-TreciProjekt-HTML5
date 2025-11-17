@@ -25,13 +25,13 @@ var BRICK_COLOR_ROW = [
 
 
 //dimenzije palice
-var PADDLE_WIDTH = 120;
+var PADDLE_WIDTH = 130;
 var PADDLE_HEIGHT = 15;
 var PADDLE_SPEED = 7;
 
 
 //dimenzije lopte
-var BALL_SIZE = 16;
+var BALL_SIZE = 12;
 var INITIAL_BALL_SPEED = 3;
 
 
