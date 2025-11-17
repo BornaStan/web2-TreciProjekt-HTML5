@@ -10,7 +10,7 @@ var BRICK_ROWS = 5;
 var BRICK_COLUMNS = 10;
 var TOTAL_BRICKS = BRICK_ROWS * BRICK_COLUMNS;
 
-var BRICK_WIDTH = 50;
+var BRICK_WIDTH = 55;
 var BRICK_HEIGHT = 20;
 var BRICK_SPACE_H = 30;
 var BRICK_SPACE_V = 15;
@@ -31,7 +31,7 @@ var PADDLE_SPEED = 7;
 
 
 //dimenzije lopte
-var BALL_SIZE = 12;
+var BALL_SIZE = 10;
 var INITIAL_BALL_SPEED = 3;
 
 
@@ -408,7 +408,7 @@ function detectCollision() {
 
                 //povecanje brzine zbog pogotka u kut
                 if (cornerHit) {
-                    ballSpeed *= 1.05;
+                    ballSpeed *= 1.04;
                     calculateVelocity();
                 }
 
