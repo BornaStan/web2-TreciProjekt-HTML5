@@ -16,11 +16,11 @@ var BRICK_SPACE_H = 30;
 var BRICK_SPACE_V = 15;
 var BRICK_TOP_OFFSET = 60;
 var BRICK_COLOR_ROW = [
-    "rgb(153, 51, 0)",    // smeđa
-    "rgb(255, 0, 0)",     // crvena
-    "rgb(255, 153, 204)", // ružičasta
-    "rgb(0, 255, 0)",     // zelena
-    "rgb(255, 255, 153)"  // žuta
+    "rgb(153, 51, 0)",    
+    "rgb(255, 0, 0)",     
+    "rgb(255, 153, 204)", 
+    "rgb(0, 255, 0)",     
+    "rgb(255, 255, 153)"  
 ];
 
 
@@ -31,7 +31,7 @@ var PADDLE_SPEED = 7;
 
 
 //dimenzije lopte
-var BALL_SIZE = 16; // kvadrat
+var BALL_SIZE = 16;
 var INITIAL_BALL_SPEED = 4;
 
 
@@ -332,6 +332,7 @@ function updateBallXY() {
             hit = 1;
         }
 
+        //izracun vertikalne i horizontalne brzine
         ballVx = hit * ballSpeed;
         var rest = ballSpeed * ballSpeed - ballVx * ballVx;
         if (rest < 0) {
@@ -380,6 +381,7 @@ function detectCollision() {
 
                 var cornerHit = false;
 
+                //postavljanje koordinata loptice ovisno o dijelu cigle o koji je udarila
                 if (min === overlapLeft) {
                     ballX = brick.x - half;
                     ballVx = -Math.abs(ballVx);
