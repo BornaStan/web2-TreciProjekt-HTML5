@@ -408,7 +408,7 @@ function detectCollision() {
 
                 //povecanje brzine zbog pogotka u kut
                 if (cornerHit) {
-                    ballSpeed *= 1.05;
+                    ballSpeed *= 1.04;
                     calculateVelocity();
                 }
 
