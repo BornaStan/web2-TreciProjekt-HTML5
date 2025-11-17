@@ -102,7 +102,7 @@ function resetPositions() {
 }
 
 
-//
+//inicijaliziranje početnog smjera loptice(random)
 function initBallDirection() {
     // random se bira smjer kretanja loptice (lijevo ili desno)
     var direction = Math.random() < 0.5 ? -1 : 1;
