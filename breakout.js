@@ -32,7 +32,7 @@ var PADDLE_SPEED = 7;
 
 //dimenzije lopte
 var BALL_SIZE = 16;
-var INITIAL_BALL_SPEED = 4;
+var INITIAL_BALL_SPEED = 3;
 
 
 //inicijalizacija pomocnih varijabli
@@ -408,7 +408,7 @@ function detectCollision() {
 
                 //povecanje brzine zbog pogotka u kut
                 if (cornerHit) {
-                    ballSpeed *= 1.04;
+                    ballSpeed *= 1.05;
                     calculateVelocity();
                 }
 
